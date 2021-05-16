@@ -18,7 +18,7 @@ def load_weights_tiny(model, weights_file, model_name):
     j = 0
     for i in range(layer_size):
         conv_layer_name = 'conv2d_%d' % i if i > 0 else 'conv2d'
-        print(conv_layer_name)
+        # print(conv_layer_name)
         bn_layer_name = 'batch_normalization_%d' % j if j > 0 else 'batch_normalization'
 
         conv_layer = model.get_layer(conv_layer_name)
